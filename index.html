@@ -24,8 +24,9 @@
         <dd>[ctrl + s] - Save your work.</dd>
         <dd>view in browser - Right-Click 'index.html tab', select copy path, paste path in browser.</dd>
         <dd>see updates - Save in VSCode, click the reload icon in browser, or push [F5] on keyboard. </dd>
+        <dd><i>css not loading properly - Force a clean reload: In browser try [shift + Refresh] or [ctrl + Refresh]. </i></dd>
         <br>
-        <dt><b>Stage and Commit in terminal  Steps:</b></dt>
+        <dt><b>Stage and Commit in terminal Steps:</b></dt>
         <dd>git status - To Check current Status [tracked or untracked]. </dd>
         <dd>git add . - [Add All] with '.' or list the files.ext to commit. </dd>
         <dd><i>git rm</i> - Optional: --cached 'filename.ext' - to unnstage commit(s). </dd>
@@ -47,7 +48,8 @@
         <br>
         <br>
         <h2>STEP 3: [ <i>optional</i> ]: </h2>
-        <dt><b>Add A Collaborator(s):</b></dt>
+        <dt><b>Add A Collaborator(s) Steps:</b></dt>
+        <dd>additional resource: <a href = https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository>Inviting Collaborators to a personal repository</a>.</dd>
         <dd>repo settings - Go to your Project and click on it's Gear Settings icon. </dd>
         <dd>manage access - Click Manage Access from the menu on the left, inside of repo settings. </dd>
         <dd>invite a collaborator - Click invite a callaborator button and submit their username. </dd>
@@ -55,7 +57,7 @@
         <dd><i>accept collab on github</i> - Visit URL for 'Control's Copy Of Repo' to accept via-notification. </dd>
         <br>
         <h2>STEP 4: [ <i>optional</i> ]: </h2>
-        <dt><b>Clone Project From GitHub: </b></dt>
+        <dt><b>Clone Project From GitHub Steps: </b></dt>
         <dd>clone from github - Navigate to Repo Owner's profile and click the Repo Project you want to clone. </dd>
         <dd>copy https/ssh url - Click the green 'Copy' button, select HTTPs, then click the clipboard to copy. </dd>
         <dd>submit to terminal - Open terminal, navigate to Dev-Folder(outside of repo folders), paste/submit clone URL. </dd>
@@ -63,38 +65,40 @@
         <dd>commit clone changes - Same as usual: git status, git add ., git status, commit -m. "message". </dd>
         <br>
         <h2>STEP 5: [ <i>optional</i> ]: </h2>
-        <dt><b>Push/Pull, Update/Retreive Repo: </b></dt>
+        <dt><b>Push/Pull, Update/Retreive Repo Steps: </b></dt>
         <dd> push clone repo to github - Use git push origin main so your changes are added to the remote repo file(s). </dd>
         <dd>pull clone from github - Use git pull origin main to access/modify pushed repo additions. </dd>
         <dd>collaboration - Save, push, pull, edit, and commit repo for collaboration to keep the repo up-to-date. </dd>
         <br>
         <h2>STEP 6: </h2>
-        <dt><b>Branches in Git: </b></dt>
+        <dt><b>Branches in Git Steps: </b></dt>
+        <dd>additional resource: <a href = https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging>Git Branching - basic Brancing and Merging</a>.</dd>
+        <dd>additional resoursce: <a href = https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/stash.html#git-stash>Git Stash - Repo not in correct branch fix</a>.</dd>
         <dd>create a branch - Type in terminal, git checkout -b BRANCH-NAME to create a branch. </dd>
         <dd>pushing to a branch - After saving and commiting changes, type git push origin BRANCH-NAME in terminal. </dd>
         <dd>pull from a branch - Type git pull origin BRANCH-NAME in terminal to retrieve updated repo from GitHub. </dd>
         <dd>view branches in github - Navigate to the repo. Below title you will see # branches.</dd>
-        <br>
+        <br><!-- Maybe will add git stash stuff here -->
         <h2>STEP 7: </h2>
-        <dt><b>Open/Merge Pull Request in GitHub: </b></dt>
+        <dt><b>Open/Merge Pull Request in GitHub Steps: </b></dt>
         <dd>open a pull request - Navigate to the project in GitHub, click branches, search for the branch by name.</dd>
         <dd>new pull request - Click New Pull Request inline with selected branch and add details in the description.</dd>
         <dd>merge the pull request - Go to repo in GitHub and click Pull Requests,view by title, review, confirm merge.</dd>
+        <dd>pull updated main branch from github - Type in terminal, [1] git checkout main, [2]git pull origin main, and voila!</dd>
         <br>
         <h2>STEP 8: </h2>
-        <dt><b>Merging Conflicts: </b></dt>
-        <dd></dd>
-
-
-
-
-
-
-
-
-
-
-
+        <dt><b>Merging Conflicts Steps: </b></dt>
+        <dd>additional resources: <a href = https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line>Resolving a merge conflict using the command line</a>.</dd>
+        <dd>merge rejected in terminal - Type git pull in terminal to pull down changes that's currently not on your local machine. </dd>
+        <dd>local code indication - THe code highlighted in 'HEAD (Current Change)' is code available on your local machine, your changes.</dd>
+        <dd>pulled code indication - the code witht he hash#########... (Incoming Change) is the code that's conflicting with yours.</dd>
+        <dd>fix merge conflicts - You can Accept current change(your code), Accept incoming change(Conflicting Code), or fix the hightlighted code manually.</dd>
+        <br>
+        <h2>BONUS[ <i>tips</i> ]: </h2>
+        <dt><b>Avoiding Merge Conflicts: </b></dt>
+        <dd>--- Deal with any uncommitted work before trying to merge.</dd>
+        <dd>--- Collaborators should avoid working on the same file at the same time.</dd>
+        <dd>--- Try to avoid adding code directly into main. New ideas should be explored in a different branch first and then merged.</dd>
 
 
 
