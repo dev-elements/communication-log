@@ -27,7 +27,7 @@
         <dd><i>css not loading properly - Force a clean reload: In browser try [shift + Refresh] or [ctrl + Refresh]. </i></dd>
         <br>
         <dt><b>Stage and Commit in terminal Steps:</b></dt>
-        <dd>git status - To Check current Status [tracked or untracked]. </dd>
+        <dd>git status - To Check current Status [tracked or untracked]. Be sure to check which branch you're in. </dd>
         <dd>git add . - [Add All] with '.' or list the files.ext to commit. </dd>
         <dd><i>git rm</i> - Optional: --cached 'filename.ext' - to unnstage commit(s). </dd>
         <dd>git status - Check status again to see staged files in green. </dd>
@@ -73,11 +73,18 @@
         <h2>STEP 6: </h2>
         <dt><b>Branches in Git Steps: </b></dt>
         <dd>additional resource: <a href = https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging>Git Branching - basic Brancing and Merging</a>.</dd>
-        <dd>additional resoursce: <a href = https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/stash.html#git-stash>Git Stash - Repo not in correct branch fix</a>.</dd>
         <dd>create a branch - Type in terminal, git checkout -b BRANCH-NAME to create a branch. </dd>
         <dd>pushing to a branch - After saving and commiting changes, type git push origin BRANCH-NAME in terminal. </dd>
         <dd>pull from a branch - Type git pull origin BRANCH-NAME in terminal to retrieve updated repo from GitHub. </dd>
         <dd>view branches in github - Navigate to the repo. Below title you will see # branches.</dd>
+        <br><!-- Maybe will add git stash stuff here -->
+        <h2>BONUS[ <i>tips</i> ]: </h2>
+        <dt><b>Wrong Branch Uncommited Work Fix using Git Stash: </b></dt>
+        <dd>additional resoursce: <a href = https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/stash.html#git-stash>Git Stash - Repo not in correct branch fix</a>.</dd>>
+        <dd>wrong branch, uncommited changes - Typing git status shows uncommited work, trying to switch branch with git checkout feature fails. </dd>
+        <dd>stash changes off to the side - Type git stash in terminal to place the uncommited work off to the side and out of the wrong branch. </dd>
+        <dd>switch to correct branch - Check with git status to make sure the uncommited work has been stashed, if so use git checkout BRANCH-NAME. </dd>
+        <dd>retreive the stash and commit -  Type git stash pop in terminal to pop the stashed work into the correct branch. Finish the commit, voila! </dd>
         <br><!-- Maybe will add git stash stuff here -->
         <h2>STEP 7: </h2>
         <dt><b>Open/Merge Pull Request in GitHub Steps: </b></dt>
